@@ -15,6 +15,7 @@ function blurring() {
     bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
 }
 
+// Maps a range of numbers to another range of numbers 
 function scale (number, inMin, inMax, outMin, outMax) {
     return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 }
